@@ -19,8 +19,12 @@ This plugin reads commands from the settings file. The commands settings-key is 
 
 For more info, see the examples
 
+Note: Only example 2 applies due to change in the .py file (P.S. single line commands also work)
+      Reason for this change was because I was unable to get scripts working until the change to
+      the .py script was made (external script files are more robust anyways and keeps the settings
+      file easier to manage by removing the script code from it).
 
-Examples - Only example 2 applies due to change or single line commands
+Examples
 ========
     {
       "commands": {
