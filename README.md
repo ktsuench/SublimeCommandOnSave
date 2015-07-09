@@ -20,7 +20,7 @@ This plugin reads commands from the settings file. The commands settings-key is 
 For more info, see the examples
 
 
-Examples
+Examples - Only example 2 applies due to change or single line commands
 ========
     {
       "commands": {
