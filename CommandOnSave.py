@@ -15,6 +15,6 @@ class CommandOnSave(sublime_plugin.EventListener):
                 if file.startswith(path) and len(commands) > 0:
                     print("Command on Save:")
                     for command in commands:
-                        p = subprocess.Popen([command], shell=True, stdout=subprocess.PIPE)
+                        p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
                         out, err = p.communicate()
                         print (out.decode('utf-8'))
