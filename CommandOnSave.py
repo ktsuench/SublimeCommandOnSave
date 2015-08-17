@@ -8,7 +8,7 @@ class CommandOnSave(sublime_plugin.EventListener):
 
         settings = sublime.load_settings('CommandOnSave.sublime-settings').get('commands')
         filepath = view.file_name()
-        file = re.search('[^\/]*$').group(0)
+        file = re.search('[^\/]*$', filepath).group(0)
         
         if not settings == None:
             for path in settings.keys():
